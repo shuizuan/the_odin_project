@@ -1,0 +1,50 @@
+body {
+    display:grid;
+    grid-area: 2rem 1fr / 1fr;
+}
+
+#recipe-block {
+    width:80vw; height: 250px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display:flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: stretch;
+    font-size:1.6rem;
+}
+
+#recipe-block a {
+    text-decoration: underline;
+    text-decoration-thickness: 4px;
+    text-decoration-skip-ink: none;
+}
+
+ul, li {
+    display: inline-block;
+}
+
+ul {
+    padding-left: 0px;
+    height:100%;
+    vertical-align: center;
+    margin: 0 auto;
+}
+
+
+li{
+    margin-right: 3rem;
+}
+
+.list {
+    display: grid;
+    line-height: 4rem;
+}
+
+.ul-test {
+    display:flex;
+    width: 100%;
+    justify-content: space-around;
+}
