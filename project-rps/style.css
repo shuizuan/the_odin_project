@@ -1,0 +1,103 @@
+body {
+    font-size: 1.25em;
+    background-color: #2b2b2b;
+    color: #313131;
+    text-align: center;
+    margin: 0px; padding: 0px;
+    overflow-x:hidden;
+    font-family: Monospace, "Helvetica Neue", "Open Sans", Helvetica, Arial, sans-serif;
+    font-size: 1.0666rem;
+    overflow-y: scroll;
+}
+
+.fullContent, #talkContainer {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.fullContent::-webkit-scrollbar, #talkContainer::-webkit-scrollbar {
+    display: none;
+}
+
+.mainContainer {
+    display: grid;
+    grid-template: 15vh 70vh 15vh / 15vw 70vw 15vw;
+    justify-items: center;
+}
+
+.fullContent {
+    grid-area: 2 / 2 / 3 / 3;
+    grid-template: 1fr 1fr / 1fr;
+    overflow: scroll;
+    background-color: rgb(224, 224, 224);
+    min-height: 540px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    /*design*/
+    box-shadow: -1px -1px 5px 3px rgba(0,0,0,0.19), -1px -1px 5px 3px rgba(0, 0, 0, 0.171) inset;
+    border-radius: 5px;
+}
+
+#talkContainer {
+    background-color: #202020;
+    color:chartreuse;
+    overflow: scroll;
+    width: 65vw;
+    height: 325px;
+    display: grid;
+    grid-template: 78% 20% / 100%;
+    align-items: center;
+    margin: 1.5rem 1.5rem;
+    /*design*/
+    border-radius: 5px;
+    box-shadow: -1px -1px 20px 5px rgb(0, 0, 0) inset;
+    border: 2px solid #000;
+}
+
+#roundStats {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    padding:0 1rem;
+}
+
+#history {
+    display:grid;
+    grid-template: auto / 1fr 1fr 1fr 1fr;
+    align-items: center;
+}
+
+#allButtons {
+    display:flex;
+    flex-flow: column nowrap;
+    height: 80%;
+    margin-bottom: 5%;
+    justify-content: space-around;
+    box-shadow: 0px 4px 9px 1px rgba(0, 0, 0, 0.116) inset;
+    background-color: rgba(0, 0, 0, 0.055);
+}
+
+.topButtons, .rpsButtons {
+    box-shadow: 3px 4px 9px 1px rgba(0, 0, 0, 0.116) inset;
+    height: 2rem; width: 5rem;
+}
+
+
+@media (min-width: 777px) {
+    .fullContent {
+        max-width:600px;
+    }
+    #talkContainer {
+        width: 500px;
+    }
+}
+
+
+#turbo {
+    grid-area: 1 / 2 / 2 / 3;
+    width: 5rem;
+    height: 2rem;
+    display: none;
+}

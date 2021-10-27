@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <base href="https://shuizuan.github.io/the_odin_project/">
+    <link rel="stylesheet" href="project-rps/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper, Scissors!</title>
+</head>
+<body>
+    <div>
+        <div class="mainContainer">
+            <button class="topButtons" id="turbo" onclick="turbo();">turbo</button>
+            <div class="fullContent">
+                <div id="talkContainer">
+                    <div id="mainPlay">
+                        <span id="botThink">Start <br>playing!</span><span id="botTalk"></span>
+                        <span id="resultText"></span>
+                    </div>
+                    <div id="roundStats">
+                        <div id="roundStatsP">
+                            <p> Current <br>Score: </p>
+                        </div>
+                        <div>
+                            <p>WIN (<span id="winText">0</span>)</p>
+                        </div>
+                        <div>
+                            <p>LOSS (<span id="lossText">0</span>)</p>
+                        </div>
+                        <div>
+                            <p>DRAW (<span id="drawText">0</span>)</p>
+                        </div>
+                    </div>
+                        <div class="blackScreen" id="history"></div>
+                    
+                </div>
+                <div id="allButtons">
+                    <div id="rowOne">
+                        <div class="buttonContainer">
+                            <button class="topButtons" id="playButton" onclick="togglePlay(), enableToggle()">Play!</button>
+                            <button class="topButtons" id="historyButton" onclick="toggleHistory(), disableToggle()">History</button>
+                            <button class="topButtons" id="resetScore" onclick="roundHistory(), disableToggle()">Reset</button>
+                            
+                        </div>              
+                    </div>
+                    <div id="game">
+                        <div class="content">
+                            <div class="buttonContainer">
+                                <button class="rpsButtons" id="rock" onclick="setRock();timeoutWrapper()">Rock!</button>
+                                <button class="rpsButtons" id="paper" onclick="setPaper();timeoutWrapper()">Paper!</button>
+                                <button class="rpsButtons" id="scissors" onclick="setScissors();timeoutWrapper()">Scissors!</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="project-rps/script.js"></script>
+</body>
+</html>
