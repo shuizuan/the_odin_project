@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <base href="https://shuizuan.github.io/the_odin_project/">
+    <link rel="stylesheet" href="etch-a-sketch/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <title>Etch-a-Sketch</title>
+</head>
+<body>
+<header>
+    <h3>/shuizuan/</h3>
+    <a href="https://github.com/shuizuan">github</a>
+</header>
+<main>
+    <div id="contLimit">
+        <div id="title">
+            <h2>Etch-a-Sketch</h2>
+        </div>
+        <div id="easContainer">
+            <div id="genCon">
+            </div>
+        </div>
+        <div id="settings">
+            <div id="changeGrid">
+                <input id="grid"type="number" max="100" placeholder="Grid size">
+                <button onclick="changeGrid()">Ok!</button>
+            </div>
+            <button onclick="blackWhite()">Black and White</button>
+            <button onclick="resetColor()">Reset</button>
+        </div>
+    </div>
+</main>
+<footer>
+    <p>the odin project</p>
+</footer>
+</body>
+</html>
