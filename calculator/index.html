@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <base href="https://shuizuan.github.io/the_odin_project/">
+    <link rel="stylesheet" href="calculator/style.css">
+    <script src="calculator/script.js" defer></script>
+<!--     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script> -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+<header>
+    <h3>/shuizuan/</h3>
+    <a href="https://github.com/shuizuan">github</a>
+</header>
+<main>
+    <div id="calcWrap">
+        <div id="displays">
+            <div id="histBWrap">
+                <button id="histBut">history</button>
+            </div>
+            <div id="prevs">
+                <p id="startPrev">Previous Equation</p>
+                <p id="prevDisp"></p>
+            </div>
+            <div id="mainDisp">
+                <h6 id="start">Display</h6>
+                <h6 id="dftDisp"></h6>
+                <h6 id="res"></h6>
+            </div>
+        </div>
+        <div id="buttons">
+            <button value="" id="clear">Clear</button>
+            <button value="" id="del">Delete</button>
+            <button value="/" >/</button>
+            <button value="7" >7</button>
+            <button value="8" >8</button>
+            <button value="9" >9</button>
+            <button value="*" >*</button>
+            <button value="4" >4</button>
+            <button value="5" >5</button>
+            <button value="6" >6</button>
+            <button value="+" >+</button>
+            <button value="1" >1</button>
+            <button value="2" >2</button>
+            <button value="3" >3</button>
+            <button value="-" >-</button>
+            <button value="0" id="zero">0</button>
+            <button value="." >.</button>
+            <button value="" id="equal" >=</button>
+        </div>
+    </div>
+    <div id="historyWrap">
+        <div id="mainHist">
+        </div>
+    </div>
+</main>
+<footer>
+    <p>the odin project</p>
+</footer>
+</body>
+</html>
